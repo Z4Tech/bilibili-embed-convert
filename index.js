@@ -33,4 +33,40 @@ function Bili_video(){
   }
 }
 
+Bili_video.prototype.getIndex = function(){
+  return [this.avnumber + this.page];
+}
+
+Bili_video.prototype.flashAddr = function(){
+  return 'http://share.acg.tv/flash.swf?aid='
+  + this.avnumber
+  + '&page='
+  + this.page
+}
+
+Bili_video.prototype.embedAddr = function(){
+  switch (arguments.length) {
+    case 0:
+    return '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
+      + this.avnumber
+      + '&page='
+      + this.page
+      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
+      break;
+    case 2:
+    return '<embed height="'
+      + arguments[0] //height
+      + '" width="'
+      + arguments[1] //width
+      '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
+      + this.avnumber
+      + '&page='
+      + this.page
+      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
+      break;
+    default:
+      throw new error("Wrong arguments number.");
+  }
+}
+
 module.exports = Bili_video;
