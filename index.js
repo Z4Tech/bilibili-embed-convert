@@ -16,20 +16,20 @@ function Bili_video(){
           this.page = av_page[1];
           break;
         default:
-          throw new error("Wrong argument type.");
+          console.error("Wrong argument type.");
       }
       break;
     case 2:
       if(typeof(arguments[0])!='number'
       || typeof(arguments[1])!='number'){
-        throw new error("Arguments must be numbers.");
+        console.error("Arguments must be numbers.");
       }else{
         this.avnumber = arguments[0];
         this.page = arguments[1];
       }
       break;
     default:
-      throw new error("Wrong arguments number.");
+      console.error("Wrong arguments number.");
   }
 }
 
@@ -40,8 +40,8 @@ Bili_video.prototype.getIndex = function(){
 Bili_video.prototype.getURL = function(){
   return 'http://www.bilibili.com/video/av'
     + this.avnumber
-    + this.page
     + '/index_'
+    + this.page
     + '.html';
 }
 
