@@ -34,7 +34,7 @@ function Bili_video(){
 }
 
 Bili_video.prototype.getIndex = function(){
-  return [this.avnumber + this.page];
+  return [this.avnumber, this.page];
 }
 
 Bili_video.prototype.getURL = function(){
@@ -53,28 +53,17 @@ Bili_video.prototype.flashAddr = function(){
 }
 
 Bili_video.prototype.embedAddr = function(){
-  switch (arguments.length) {
-    case 0:
-    return '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
-      + this.avnumber
-      + '&page='
-      + this.page
-      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
-      break;
-    case 2:
+    var height = arguments[0] || 452,
+        width = arguments[1] ||544;
     return '<embed height="'
-      + arguments[0] //height
+      + height
       + '" width="'
-      + arguments[1] //width
-      '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
+      + width
+      + '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
       + this.avnumber
       + '&page='
       + this.page
       + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
-      break;
-    default:
-      throw new error("Wrong arguments number.");
-  }
 }
 
 module.exports = Bili_video;
