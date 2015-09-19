@@ -1,4 +1,8 @@
-var bili_convert = require("./index.js");
+var Bili_video = require("./index.js");
+
+console.log("使用av号创建测试");
+var bili_video = new Bili_video(1, 1);
+console.log(bili_video.avnumber + ' ' + bili_video.page);
 
 var url_list = [
   'http://www.bilibili.com/video/av2333333/index_3.html',
