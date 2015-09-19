@@ -3,14 +3,14 @@
 convert url of bilibili.com to embedded video element.
 
 ##Usage
-var bili_convert = require('bilibili-embed-convert');
+    var bili_convert = require('bilibili-embed-convert');
 
-//Create object
-var bili_video = new bili_convert(url);
-var bili_video_num = new bili_convert(av_number);
-var bili_video_num_page = new bili_convert(av_number, page_number);
+    //Create object
+    var bili_video = new bili_convert(url);
+    var bili_video_num = new bili_convert(av_number);
+    var bili_video_num_page = new bili_convert(av_number, page_number);
 
-//Generate embedded code
-var flash = bili_video.flashAddr();
-var embedded = bili_video.embedAddr();
-var embedded_size = bili_video.embedAddr(height, width);
+    //Generate embedded code
+    var flash = bili_video.flashAddr();
+    var embedded = bili_video.embedAddr();
+    var embedded_size = bili_video.embedAddr(height, width);
