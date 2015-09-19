@@ -4,7 +4,7 @@
   "description": "convert url of bilibili.com to embedded video element.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",

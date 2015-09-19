@@ -1,4 +1,4 @@
-var Bili_video = require("./index.js");
+var Bili_video = require("../index.js");
 
 var url_list = [
   'http://www.bilibili.com/video/av2333333/index_3.html',

@@ -1,4 +1,4 @@
-var bparser = require("./parseBiliURL");
+var bparser = require("./lib/parseBiliURL");
 
 function Bili_video(){
   this.avnumber = undefined;
@@ -37,11 +37,19 @@ Bili_video.prototype.getIndex = function(){
   return [this.avnumber + this.page];
 }
 
+Bili_video.prototype.getURL = function(){
+  return 'http://www.bilibili.com/video/av'
+    + this.avnumber
+    + this.page
+    + '/index_'
+    + '.html';
+}
+
 Bili_video.prototype.flashAddr = function(){
   return 'http://share.acg.tv/flash.swf?aid='
   + this.avnumber
   + '&page='
-  + this.page
+  + this.page;
 }
 
 Bili_video.prototype.embedAddr = function(){
@@ -51,7 +59,7 @@ Bili_video.prototype.embedAddr = function(){
       + this.avnumber
       + '&page='
       + this.page
-      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
+      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
       break;
     case 2:
     return '<embed height="'
@@ -62,7 +70,7 @@ Bili_video.prototype.embedAddr = function(){
       + this.avnumber
       + '&page='
       + this.page
-      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
+      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
       break;
     default:
       throw new error("Wrong arguments number.");
