@@ -1,0 +1,24 @@
+{
+  "name": "bilibili-embed-convert",
+  "version": "0.1.0",
+  "description": "convert url of bilibili.com to embedded video element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Z4Tech/bilibili-embed-convert.git"
+  },
+  "keywords": [
+    "url",
+    "bilibili",
+    "embed"
+  ],
+  "author": "Z4Tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Z4Tech/bilibili-embed-convert/issues"
+  },
+  "homepage": "https://github.com/Z4Tech/bilibili-embed-convert#readme"
+}
