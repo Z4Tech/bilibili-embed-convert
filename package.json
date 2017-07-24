@@ -1,6 +1,6 @@
 {
   "name": "bilibili-embed-convert",
-  "version": "0.2.2",
+  "version": "0.3.1",
   "description": "convert url of bilibili.com to embedded video element.",
   "main": "index.js",
   "scripts": {

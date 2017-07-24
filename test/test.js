@@ -14,29 +14,29 @@ var url_list = [
 ];
 
 var flash_list = [
-  'https://share.acg.tv/flash.swf?aid=2333333&page=3',
-  'https://share.acg.tv/flash.swf?aid=2333333&page=2',
-  'https://share.acg.tv/flash.swf?aid=7&page=1',
-  'https://share.acg.tv/flash.swf?aid=990754&page=2',
-  'https://share.acg.tv/flash.swf?aid=2030663&page=1',
-  'https://share.acg.tv/flash.swf?aid=1673701&page=1',
-  'https://share.acg.tv/flash.swf?aid=187189&page=2',
-  'https://share.acg.tv/flash.swf?aid=2182749&page=1',
-  'https://share.acg.tv/flash.swf?aid=1032809&page=1',
-  'https://share.acg.tv/flash.swf?aid=2053&page=1'
+  '//static.hdslb.com/miniloader.swf?aid=2333333&page=3',
+  '//static.hdslb.com/miniloader.swf?aid=2333333&page=2',
+  '//static.hdslb.com/miniloader.swf?aid=7&page=1',
+  '//static.hdslb.com/miniloader.swf?aid=990754&page=2',
+  '//static.hdslb.com/miniloader.swf?aid=2030663&page=1',
+  '//static.hdslb.com/miniloader.swf?aid=1673701&page=1',
+  '//static.hdslb.com/miniloader.swf?aid=187189&page=2',
+  '//static.hdslb.com/miniloader.swf?aid=2182749&page=1',
+  '//static.hdslb.com/miniloader.swf?aid=1032809&page=1',
+  '//static.hdslb.com/miniloader.swf?aid=2053&page=1'
 ];
 
 var embed_list = [
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=2333333&page=3" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=2333333&page=2" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=7&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=990754&page=2" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=2030663&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=1673701&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=187189&page=2" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=2182749&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=1032809&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
-  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://share.acg.tv/flash.swf" flashvars="aid=2053&page=1" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=2333333&page=3" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=2333333&page=2" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=7&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=990754&page=2" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=2030663&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=1673701&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=187189&page=2" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=2182749&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=1032809&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>',
+  '<embed height="452" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=2053&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>'
 ];
 
 console.log("Manual Tests");
