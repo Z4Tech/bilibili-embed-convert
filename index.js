@@ -38,7 +38,7 @@ Bili_video.prototype.getIndex = function(){
 }
 
 Bili_video.prototype.getURL = function(){
-  return 'http://www.bilibili.com/video/av'
+  return 'https://www.bilibili.com/video/av'
     + this.avnumber
     + '/index_'
     + this.page
@@ -46,7 +46,7 @@ Bili_video.prototype.getURL = function(){
 }
 
 Bili_video.prototype.flashAddr = function(){
-  return 'http://share.acg.tv/flash.swf?aid='
+  return '//static.hdslb.com/miniloader.swf?aid='
   + this.avnumber
   + '&page='
   + this.page;
@@ -59,11 +59,11 @@ Bili_video.prototype.embedAddr = function(){
       + height
       + '" width="'
       + width
-      + '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid='
+      + '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid='
       + this.avnumber
       + '&page='
       + this.page
-      + '" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
+      + '" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
 }
 
 module.exports = Bili_video;
