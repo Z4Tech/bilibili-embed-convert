@@ -55,15 +55,15 @@ Bili_video.prototype.flashAddr = function(){
 Bili_video.prototype.embedAddr = function(){
     var height = arguments[0] || 452,
         width = arguments[1] ||544;
-    return '<embed height="'
-      + height
-      + '" width="'
-      + width
-      + '" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid='
+    return '<iframe src="https://player.bilibili.com/player.html?aid='
       + this.avnumber
       + '&page='
       + this.page
-      + '" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>';
+      + '" scrolling="no" border="0" frameborder="no" framespacing="0" width="'
+      + width
+      + '" height="'
+      + height
+      + '" allowfullscreen="true"> </iframe>';
 }
 
 module.exports = Bili_video;
